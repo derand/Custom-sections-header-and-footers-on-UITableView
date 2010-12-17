@@ -143,6 +143,7 @@
 
 	CGRect rct;
 	headerView = [[UIView alloc] initWithFrame:CGRectZero];
+	headerView.backgroundColor = [UIColor clearColor];
 	UIImage *img = [UIImage imageNamed:@"apple.png"];
 	UIImageView *tmpImgView = [[UIImageView alloc] initWithImage:img];
 	rct = CGRectMake(screenRect.size.width*.05, 0.0, img.size.width, img.size.height);
@@ -154,6 +155,7 @@
 	[tmpImgView release];
 
 	footerView = [[UIView alloc] initWithFrame:CGRectZero];
+	footerView.backgroundColor = [UIColor clearColor];
 	img = [UIImage imageNamed:@"eve.png"];
 	tmpImgView = [[UIImageView alloc] initWithImage:img];
 	rct = CGRectMake(screenRect.size.width-screenRect.size.width*.05-img.size.height, 0.0, img.size.width, img.size.height);
